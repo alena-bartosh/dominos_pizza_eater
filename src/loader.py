@@ -12,10 +12,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 parser = argparse.ArgumentParser(description='Script that loads data from dominos.ua')
-parser.add_argument('--lang', type=str, default='ru', help='Site and data language')
-parser.add_argument('--wait', action='store_true', help='Wait for town confirm popup')
-parser.add_argument('-l', '--login', type=str, help='User\'s login or email')
-parser.add_argument('-p', '--password', type=str, help='User\'s password')
+parser.add_argument('--lang', type=str, default='ru', metavar='', help='site and data language')
+parser.add_argument('--wait', action='store_true', help='wait for town confirm popup')
+parser.add_argument('-l', '--login', type=str, metavar='', help='user\'s login or email')
+parser.add_argument('-p', '--password', type=str, metavar='', help='user\'s password')
 
 args = parser.parse_args()
 driver = webdriver.Chrome()
