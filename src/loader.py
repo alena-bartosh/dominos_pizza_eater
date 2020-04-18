@@ -33,12 +33,7 @@ login_button = driver.find_element_by_xpath(login_button_xpath)
 login_button.click()
 time.sleep(5)
 
-profile_button = driver.find_element_by_class_name('fake-header__sing-in-block')
-profile_button.click()
-time.sleep(2)
-
-history_button = driver.find_element_by_xpath('//li[text()="History"]')
-history_button.click()
+driver.get(f'https://dominos.ua/{args.lang}/kyiv/user/history/')
 
 if not args.no_close:
     driver.close()
