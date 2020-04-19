@@ -16,6 +16,7 @@ pip install -r requirements.txt
 (in the virtual environment)
 ```sh
 ./src/extractor.py --login YOUR_LOGIN --password YOUR_PASSWORD
+./src/transformer.py
 ```
 
 ### Usage
