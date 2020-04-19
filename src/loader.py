@@ -19,8 +19,9 @@ parser.add_argument('-b', '--browser',  type=str, choices=['chrome', 'firefox'],
                     default='chrome', metavar='', help='webdriver (chrome by default)')
 parser.add_argument('--log-level',  type=str, choices=['debug', 'info', 'warning', 'error'],
                     default='debug', metavar='', help='debug/info/warning/error')
-parser.add_argument('-l', '--login', type=str, metavar='', help='user\'s login or email')
-parser.add_argument('-p', '--password', type=str, metavar='', help='user\'s password')
+required_args = parser.add_argument_group('required arguments')
+required_args.add_argument('-l', '--login', type=str, metavar='', help='user\'s login or email', required=True)
+required_args.add_argument('-p', '--password', type=str, metavar='', help='user\'s password', required=True)
 
 args = parser.parse_args()
 
