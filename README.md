@@ -18,6 +18,7 @@ python3 -m ipykernel install --user --name=.env
 ```sh
 ./src/extractor.py --login YOUR_LOGIN --password YOUR_PASSWORD
 ./src/transformer.py
+jupyter notebook ./ipynb/analyzer.ipynb
 ```
 
 ### Usage
