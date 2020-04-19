@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 ./src/loader.py --help
 
-usage: loader.py [-h] [--lang] [-b] [-l] [-p]
+usage: loader.py [-h] [--lang] [-b] [--log-level] [-l] [-p]
 
 Script that loads data from dominos.ua
 
@@ -30,6 +30,7 @@ optional arguments:
   -h, --help        show this help message and exit
   --lang            site and data language
   -b , --browser    webdriver (chrome by default)
+  --log-level       debug/info/warning/error
   -l , --login      user's login or email
   -p , --password   user's password
 ```
