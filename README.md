@@ -1,6 +1,6 @@
 # Domino's pizza eater :pizza:
 I really like pizza but even more I like data analysis. 
-If you feel the same way, automatically upload data about your orders in the Domino's with this script and get the analysis!
+If you feel the same way, automatically extract data about your orders in the Domino's with this script and get the analysis!
 
 ### Setup
 1. Install [Selenium driver](https://selenium-python.readthedocs.io/installation.html)
@@ -15,16 +15,16 @@ pip install -r requirements.txt
 ### Run
 (in the virtual environment)
 ```sh
-./src/loader.py --login YOUR_LOGIN --password YOUR_PASSWORD
+./src/extractor.py --login YOUR_LOGIN --password YOUR_PASSWORD
 ```
 
 ### Usage
 ```
-./src/loader.py --help
+./src/extractor.py --help
 
-usage: loader.py [-h] [--lang] [-b] [--log-level] -l  -p
+usage: extractor.py [-h] [--lang] [-b] [--log-level] -l  -p
 
-Script that loads data from dominos.ua
+Script that extracts data from dominos.ua
 
 optional arguments:
   -h, --help        show this help message and exit

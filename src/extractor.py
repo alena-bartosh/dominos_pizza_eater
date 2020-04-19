@@ -35,7 +35,7 @@ log_level_map = {
 logging.basicConfig(format='[%(asctime)s - %(levelname)-8s] %(message)s',
                     datefmt='%a, %d %b %Y %H:%M:%S')
 
-logger = logging.getLogger('loader')
+logger = logging.getLogger('extractor')
 logger.setLevel(log_level_map[args.log_level])
 
 logger.debug('Script is started ...')
