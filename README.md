@@ -3,7 +3,7 @@ I really like pizza but even more I like data analysis.
 If you feel the same way, automatically upload data about your orders in the Domino's with this script and get the analysis!
 
 ### Setup
-1. Install [Chrome Selenium driver](https://selenium-python.readthedocs.io/installation.html)
+1. Install [Selenium driver](https://selenium-python.readthedocs.io/installation.html)
 2. Run commands
 ```sh
 git clone https://github.com/alena-bartosh/dominos_pizza_eater.git && cd dominos_pizza_eater/
