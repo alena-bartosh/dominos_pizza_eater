@@ -10,6 +10,7 @@ git clone https://github.com/alena-bartosh/dominos_pizza_eater.git && cd dominos
 python3 -m venv .env
 source .env/bin/activate
 pip install -r requirements.txt
+python3 -m ipykernel install --user --name=.env
 ```
 
 ### Run
