@@ -8,6 +8,7 @@ If you feel the same way, automatically extract data about your orders in the Do
 ```sh
 git clone https://github.com/alena-bartosh/dominos_pizza_eater.git && cd dominos_pizza_eater/
 python3 -m venv .env
+echo 'export PATH=$(pwd)/src:$PATH' >> .env/bin/activate
 source .env/bin/activate
 pip install -r requirements.txt
 python3 -m ipykernel install --user --name=.env
@@ -16,14 +17,14 @@ python3 -m ipykernel install --user --name=.env
 ### Run
 (in the virtual environment)
 ```sh
-./src/extractor.py --login YOUR_LOGIN --password YOUR_PASSWORD
-./src/transformer.py
+extractor.py --login YOUR_LOGIN --password YOUR_PASSWORD
+transformer.py
 jupyter notebook ./ipynb/analyzer.ipynb
 ```
 
 ### Usage
 ```
-./src/extractor.py --help
+extractor.py --help
 
 usage: extractor.py [-h] [--lang] [-b] [--log-level] -l  -p
 
