@@ -1,4 +1,6 @@
 # Domino's pizza eater :pizza:
+I really like pizza but even more I like data analysis. 
+If you feel the same way, automatically upload data about your orders in the Domino's with this script and get the analysis!
 
 ### Setup
 1. Install [Chrome Selenium driver](https://selenium-python.readthedocs.io/installation.html)
@@ -17,17 +19,17 @@ pip install -r requirements.txt
 ```
 
 ### Usage
-```sh
+```
 ./src/loader.py --help
 
-usage: loader.py [-h] [--lang] [--wait] [-l] [-p]
+usage: loader.py [-h] [--lang] [-b] [-l] [-p]
 
 Script that loads data from dominos.ua
 
 optional arguments:
   -h, --help        show this help message and exit
   --lang            site and data language
-  --wait            wait for town confirm popup
+  -b , --browser    webdriver (chrome by default)
   -l , --login      user's login or email
   -p , --password   user's password
 ```

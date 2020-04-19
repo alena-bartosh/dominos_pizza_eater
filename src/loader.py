@@ -13,12 +13,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 parser = argparse.ArgumentParser(description='Script that loads data from dominos.ua')
 parser.add_argument('--lang', type=str, default='ru', metavar='', help='site and data language')
-parser.add_argument('--wait', action='store_true', help='wait for town confirm popup')
+parser.add_argument('-b', '--browser',  type=str, choices=['chrome', 'firefox'],
+                    default='chrome', metavar='', help='webdriver (chrome by default)')
 parser.add_argument('-l', '--login', type=str, metavar='', help='user\'s login or email')
 parser.add_argument('-p', '--password', type=str, metavar='', help='user\'s password')
 
 args = parser.parse_args()
-driver = webdriver.Chrome()
+
+driver = webdriver.Chrome() if args.browser == 'chrome' else webdriver.Firefox()
 driver.delete_all_cookies()
 
 try:
@@ -42,7 +44,7 @@ try:
 
     driver.get(f'https://dominos.ua/{args.lang}/kyiv/user/history/')
 
-    if args.wait:
+    if args.browser == 'chrome':
         wait = WebDriverWait(driver, 15)
         town_confirm_button_xpath = "//button[contains(concat(' ', normalize-space(@class),' '), ' dp-btn ')]"
         wait.until(EC.visibility_of_element_located((By.XPATH, town_confirm_button_xpath)))
