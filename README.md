@@ -1,7 +1,8 @@
 # Domino's pizza eater :pizza:
 I really like pizza but even more I like data analysis. 
 If you feel the same way, automatically extract data about your orders in the Domino's with this script and get the analysis!
-
+[Quick demo.](https://github.com/alena-bartosh/dominos_pizza_eater/blob/master/ipynb/analyzer.ipynb)
+ 
 ### Setup
 1. Install [Selenium driver](https://selenium-python.readthedocs.io/installation.html)
 2. Run commands
