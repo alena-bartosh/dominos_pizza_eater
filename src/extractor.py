@@ -96,7 +96,6 @@ try:
     orders = []
 
     for order_node in tqdm(order_nodes):
-        order = {}
 
         order_id = order_node.find_element_by_class_name('order').text
         date = order_node.find_element_by_class_name('date').text
