@@ -41,3 +41,6 @@ required arguments:
   -l , --login      user's login or email
   -p , --password   user's password
 ```
+
+### How it works
+[![Domino's pizza eater](https://img.youtube.com/vi/NGUPQketHSU/0.jpg)](https://youtu.be/NGUPQketHSU)
