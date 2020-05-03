@@ -43,4 +43,4 @@ required arguments:
 ```
 
 ### How it works
-[![Domino's pizza eater](https://img.youtube.com/vi/NGUPQketHSU/0.jpg)](https://youtu.be/NGUPQketHSU)
+[![dominos_pizza_eater](https://img.youtube.com/vi/NGUPQketHSU/0.jpg)](https://youtu.be/NGUPQketHSU)
