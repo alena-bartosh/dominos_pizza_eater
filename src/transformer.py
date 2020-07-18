@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-tsv_path_from = 'dist/dominos_pizza_orders.tsv.gz'
+tsv_path_from = 'dest/dominos_pizza_orders.tsv.gz'
 df = pd.read_csv(tsv_path_from, sep='\t', compression='gzip', index_col=0)
 
 df['order_id'] = df['order_id'].str.extract(r'(\d+)')
@@ -18,5 +18,5 @@ df = df.loc[df.index.repeat(df['count'])]
 
 df = df.drop(['details', 'date', 'count'], axis=1)
 
-tsv_path_to = 'dist/dominos_pizza_orders_transformed.tsv.gz'
+tsv_path_to = 'dest/dominos_pizza_orders_transformed.tsv.gz'
 df.to_csv(tsv_path_to, sep='\t', compression='gzip')

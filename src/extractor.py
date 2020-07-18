@@ -114,7 +114,7 @@ try:
 
     logger.info(f'All orders data has been processed')
     orders = pd.DataFrame(orders)
-    tsv_path = 'dist/dominos_pizza_orders.tsv.gz'
+    tsv_path = 'dest/dominos_pizza_orders.tsv.gz'
     orders.to_csv(tsv_path, sep='\t', compression='gzip')
     logger.info(f'Orders data has been saved to {tsv_path}')
 except Exception as e:
